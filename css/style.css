@@ -1,0 +1,11 @@
+/* #ff79ff  #aeea00   
+instructor: #ff4081 p-light #ff79b0 p-dark: #c60055 secondary #e676e6 S-light #66ffa6 s-dark #00b248 */
+
+body {
+    background-color: #ff4081;
+    
+}
+
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
+}
