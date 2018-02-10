@@ -1,6 +1,7 @@
 /* #ff79ff  #aeea00   
 instructor: #ff4081 p-light #ff79b0 p-dark: #c60055 secondary #e676e6 S-light #66ffa6 s-dark #00b248 */
 
+
 body {
     background-color: #ff4081;
     
@@ -8,4 +9,35 @@ body {
 
 h1, h2 {
     font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+li {
+    display: inline-block;
+    /*top right bottom left*/
+    margin: 0 20px 0 20px;
+}
+
+a {
+    font-size: 48px;
+}
+
+/* header styles*/
+header li {
+    /*top and bottom, right and left the same*/
+    margin: 0 10px;
+
+}
+header li:first-of-type {
+    margin-left:0;
+}
+
+/* grab all a links in the footer*/
+footer a {
+
+    font-size: 64px;
 }
