@@ -1,0 +1,31 @@
+{
+  "name": "joanrestaurant",
+  "version": "1.0.0",
+  "description": "A fun website for people who like food",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joanmarieverba/joanrestaurant.git"
+  },
+  "keywords": [
+    "food",
+    "gulp"
+  ],
+  "author": "Joan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joanmarieverba/joanrestaurant/issues"
+  },
+  "homepage": "https://github.com/joanmarieverba/joanrestaurant#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-html-beautify": "^1.0.1",
+    "gulp-less": "^3.5.0"
+  },
+  "dependencies": {
+    "browser-sync": "^2.23.6"
+  }
+}

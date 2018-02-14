@@ -1,11 +1,19 @@
+//variables
+@primary: #ff4081
+@p-light: #ff79b0;
+@p-dark: #c60055;
+@secondary: #e676e6
+@s-light: #66ffa6;
+@s-dark: #00b248R
+@primary-font: "Rammetto One", cursive;
 
 body {
-    background-color: #ff4081;
+    background-color: @secondary;
     
 }
 
 h1, h2 {
-    font-family: 'Oswald', sans-serif;
+    font-family: @primary-font;
     text-align: center;
 }
 
@@ -21,6 +29,11 @@ li {
 
 a {
     font-size: 48px;
+    color: @secondary;
+}
+
+label {
+    color: @secondary;
 }
 
 /* header styles*/
