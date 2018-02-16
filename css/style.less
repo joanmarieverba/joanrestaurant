@@ -1,20 +1,28 @@
 //variables
-@primary: #ff4081
+@primary: #ff4081;
 @p-light: #ff79b0;
 @p-dark: #c60055;
-@secondary: #e676e6
+@secondary: #e676e6;
 @s-light: #66ffa6;
-@s-dark: #00b248R
+@s-dark: #00b248;
+@white-base: #ffffff;
+@text-color: #010101;
 @primary-font: "Rammetto One", cursive;
+@secondary-font: font-family, 'Merriweather', serif;
 
 body {
-    background-color: @secondary;
-    
+    background-color: @white-base;
+    font-family: @secondary-font;
+}
+
+html {
+    font-size: 16px;
 }
 
 h1, h2 {
     font-family: @primary-font;
     text-align: center;
+    color: @primary;
 }
 
 h1 {
@@ -32,22 +40,139 @@ a {
     color: @secondary;
 }
 
+a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
 label {
     color: @secondary;
 }
 
+
+
 /* header styles*/
+
+header {
+    background-image: url("../images/header-photo.jpeg");
+    height: 300px;
+    background-size: cover;
+    margin-top: -32px;
+}
+
 header li {
     /*top and bottom, right and left the same*/
-    margin: 0 10px;
-
+    margin: 0;
+    font-size: 1.5em;
 }
 header li:first-of-type {
     margin-left:0;
 }
 
+.transparency {
+    position: relative;
+    background-color: black;
+    opacity: .6;
+    margin: 50px auto;
+    width: 90%;
+    height: 200px;
+    border-radius: 0 0 10px 10px;
+}
+
+.header-stuff {
+    position: relative;
+    margin-top: -250px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 15%;
+}
+
+/* main */
+
+.food-pictures {
+    height: 250px;
+}
+
+figure {
+    margin: auto;   
+}
+
+figure img {
+    margin: 7px;
+}
+
+/* caption on top of photo*/
+figcaption {
+    position: relative;
+    margin-top: -150px;
+    margin-left: 130px;
+    color: @s-dark;
+    font-size: 50px;
+
+}
+
+
+p {
+    font-size: 1em;
+    padding: 1em;
+    line-height: 1.5em;
+    color: @text-color;
+}
+
+iframe {
+    width: 90%;
+    margin: 0 5%;
+    height: 300px;
+}
+
+footer {
+    background: @text-color;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-left: 15%;
+}
+
 /* grab all a links in the footer*/
 footer a {
-
     font-size: 64px;
+}
+
+/* only applies when over 400 px, tablet styles */
+@media screen and (min-width: 400px) {
+    nav ul {
+        margin-left: 22.5%;
+    }
+
+    .halfer {
+        width: 50%;
+        float: left;
+    }
+
+    figure img {
+        padding: 5px;
+
+    }
+
+    p:first-of-type {
+        padding-top: 55px;
+        display: block;
+
+    }
+
+    .copy {
+        width: 100%;
+    }
+
+    .clearfix {
+        overflow: auto;
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+
 }

@@ -3,7 +3,7 @@
 const gulp = require('gulp');
 const htmlbeautify = require('gulp-html-beautify');
 const less = require('gulp-less');
-//const autoprefixer = require('gulp-autoprefixer');
+const autoprefixer = require('gulp-autoprefixer');
 const bs = require('browser-sync').create(); // create a browser sync instance.
 
 //paths
